@@ -1,0 +1,8 @@
+﻿@model List<StudentAppMVC.Models.Course>
+
+<h1>Курстар тізімі</h1>
+
+@foreach (var course in Model)
+{
+    <partial name="_CourseCard" model="course" />
+}
